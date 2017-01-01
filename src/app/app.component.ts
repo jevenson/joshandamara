@@ -19,14 +19,14 @@ export class AppComponent implements AfterViewInit{
     constructor() {
         this.headerConfig = new ParallaxConfig();
         this.headerConfig.id = 'header-parallax';
-        this.headerConfig.parallaxHeight = 20;
+        this.headerConfig.parallaxHeight = 100;
 
         this.heroConfig = new ParallaxConfig();
         this.heroConfig.id = 'hero-parallax';
         this.heroConfig.backgroundUrl = 'http://assets2.ignimgs.com/2016/02/05/firewatch0122161280jpg-0d7b84_1280w.jpg';
         this.heroConfig.backgroundSpeedY = 0.5;
         this.heroConfig.parallaxAlign = 'top';
-        this.heroConfig.parallaxHeight = 80;
+        this.heroConfig.parallaxHeight = 100;
 
         this.configTwo = new ParallaxConfig();
         this.configTwo.id = 'two-parallax';
