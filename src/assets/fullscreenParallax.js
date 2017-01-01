@@ -76,7 +76,7 @@ function fullscreenParallax () {
 			var scrollPos = $window.scrollTop();
 			var thisY = $this.offset().top;
 			var calcX = false, calcY = false;
-			var windowHeight = $window.height() * heightmult;
+			var windowHeight = ($window.height() + 56) * heightmult;
 
 			// Do we want to calculate the x position?
 			if (xSpeed !== 0) {
