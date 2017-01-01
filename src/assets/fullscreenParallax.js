@@ -115,7 +115,7 @@ function fullscreenParallax () {
 				}
 			}
 			if (calcY) {
-				yPosition = (thisY - scrollPos) * ySpeed + (windowHeight * offsety_percent);				
+				yPosition = (thisY - scrollPos) * ySpeed + (windowHeight * offsety_percent);
 			} 
 
 			// Offset by one window to make the image align to the bottom, rather than the top
@@ -140,7 +140,7 @@ function fullscreenParallax () {
 			var heightmult = $this.data("parallax-height") / 100;
 			if (isNaN(heightmult)) { heightmult = 1; }
 
-			$this.css({height: $window.height() * heightmult});
+			$this.css({height: ($window.height() + 56) * heightmult});
 		});
 			// height: function(e, i, o) { console.log(o); return $window.height() }
 		// });
