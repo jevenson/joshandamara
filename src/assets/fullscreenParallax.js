@@ -76,7 +76,7 @@ function fullscreenParallax () {
 			var scrollPos = $window.scrollTop();
 			var thisY = $this.offset().top;
 			var calcX = false, calcY = false;
-			var windowHeight = ($window.height() + 56) * heightmult;
+			var windowHeight = $window.height() * heightmult;
 
 			// Do we want to calculate the x position?
 			if (xSpeed !== 0) {
@@ -127,7 +127,7 @@ function fullscreenParallax () {
 			//$this.css({ "background-position": xPosition + "px " + yPosition + "px"})
 
 			$this.css({ "background-position-x": "center" });
-			$this.css({ "background-position-y": yPosition + "px" })
+			$this.css({ "background-position-y": (yPosition + 56) + "px" })
 		});
 	});
 
@@ -140,7 +140,7 @@ function fullscreenParallax () {
 			var heightmult = $this.data("parallax-height") / 100;
 			if (isNaN(heightmult)) { heightmult = 1; }
 
-			$this.css({height: ($window.height() + 56) * heightmult});
+			$this.css({height: $window.height() * heightmult});
 		});
 			// height: function(e, i, o) { console.log(o); return $window.height() }
 		// });
