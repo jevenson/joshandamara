@@ -127,7 +127,7 @@ function fullscreenParallax () {
 			//$this.css({ "background-position": xPosition + "px " + yPosition + "px"})
 
 			$this.css({ "background-position-x": "center" });
-			$this.css({ "background-position-y": (yPosition + 56) + "px" })
+			$this.css({ "background-position-y": (yPosition - 56) + "px" })
 		});
 	});
 
