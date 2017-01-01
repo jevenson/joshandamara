@@ -57,7 +57,7 @@ export class AppComponent implements AfterViewInit{
 
         window.setInterval(function(){
             console.log("Inner: " + window.innerHeight);
-            console.log("Inner: " + window.outerHeight);
+            console.log("Outer: " + window.outerHeight);
         }, 1000);
     }
 }
