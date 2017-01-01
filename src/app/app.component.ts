@@ -54,5 +54,10 @@ export class AppComponent implements AfterViewInit{
                 scrollTop: $target.offset().top
             }, 1000);
         });
+
+        window.setInterval(function(){
+            console.log("Inner: " + window.innerHeight);
+            console.log("Inner: " + window.outerHeight);
+        }, 1000);
     }
 }
