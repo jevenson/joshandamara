@@ -24,7 +24,7 @@
       "scripts": [
         "../node_modules/jquery/dist/jquery.min.js",
         "../node_modules/bootstrap/dist/js/bootstrap.min.js",
-        "./assets/fullscreenParallax.js"
+        "./assets/nav-menu.js"
       ],
       "environments": {
         "source": "environments/environment.ts",
