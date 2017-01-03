@@ -44,11 +44,11 @@ export class AppComponent implements AfterViewInit{
 
         if (isMobile.Android) {
             var bg = jQuery(".cd-fixed-bg");
-            jQuery(window).resize(
-            function resizeBackground() {
-                bg.height(jQuery(window).height() + 60);
-            })
-            bg.height(jQuery(window).height() + 60);
+            // jQuery(window).resize(
+            // function resizeBackground() {
+            //     bg.height(jQuery(window).height() + 60);
+            // })
+            bg.height(jQuery(window).height() + 56);
         }
     }
 }
