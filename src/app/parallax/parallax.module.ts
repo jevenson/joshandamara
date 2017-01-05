@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { ParallaxComponent }   from './parallax.component';
+import { ParallaxListComponent }   from './parallax-list.component';
+import { ParallaxGroupComponent }   from './parallax-group.component';
+import { ParallaxBackgroundComponent }   from './parallax-background.component';
 
 @NgModule({
     imports: [CommonModule],
-    exports: [ParallaxComponent],
-    declarations: [ParallaxComponent],
+    exports: [ParallaxListComponent, ParallaxGroupComponent,  ParallaxBackgroundComponent],
+    declarations: [ParallaxListComponent, ParallaxGroupComponent,  ParallaxBackgroundComponent],
     providers: [],
 })
 export class ParallaxModule { }
