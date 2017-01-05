@@ -3,8 +3,11 @@ import { Component, Input } from '@angular/core';
 @Component({
     selector: 'parallax-group',
     template: `
-        <div id="{{ groupId }}" class="parallax__group">
-            <ng-content></ng-content>
+        <div class="parallax__group" [ngClass]="setClasses()">
+            <parallax-fore>
+                <ng-content></ng-content>
+            </parallax-fore>
+            <parallax-back *ngIf="image" [image]="image"></parallax-back>
         </div>
     `,
     styles: [`
@@ -23,12 +26,27 @@ import { Component, Input } from '@angular/core';
             right: 0;
             bottom: 0;
         }
+
+        /deep/ .parallax_layer--bottom  {
+            z-index: 1;
+        }
+
+        /deep/ .parallax_layer--top {
+            z-index: 2;
+        }
+
+        /deep/ .parallax_layer--top .parallax__layer {
+            background-color: white;
+        }
     `]
 })
 export class ParallaxGroupComponent {
-    @Input() groupIdNum: number;
+    @Input() private image: string;
 
-    private get groupId(): string {
-        return "group" + this.groupIdNum.toString();
+    private setClasses(): any {
+        return {
+            'parallax_layer--top': !Boolean(this.image),
+            'parallax_layer--bottom': Boolean(this.image)
+        };
     }
 }
