@@ -8,7 +8,8 @@ import { Component, Input } from '@angular/core';
     styles: [`
         .parallax__layer--back {
             -webkit-transform: translateZ(-300px) scale(2);
-            transform: translateZ(-300px) scale(2) translateX(-2px);
+            transform: translateZ(-300px) scale(2.01, 2);
+            -moz-transform: translateZ(-300px) scale(2.02, 2);
             -ms-transform: none;
             z-index: 3;
             background-position: center;
