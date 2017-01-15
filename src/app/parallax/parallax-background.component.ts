@@ -3,7 +3,7 @@ import { Component, Input } from '@angular/core';
 @Component({
     selector: 'parallax-back',
     template: `
-        <div class="parallax__layer parallax__layer--back" [style.background-image]="'url(' + image + ')'">
+        <div class="parallax__layer parallax__layer--back" [ngClass]="backgroundClass">
             <ng-content></ng-content>
         </div>
     `,
@@ -19,9 +19,5 @@ import { Component, Input } from '@angular/core';
     `]
 })
 export class ParallaxBackgroundComponent {
-    @Input() private image: string;
-
-    private get imageStyle(): string {
-        return 'url(' + this.image + ');';
-    }
+    @Input() private backgroundClass: string;
 }

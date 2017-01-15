@@ -7,14 +7,14 @@ import { Component, Input } from '@angular/core';
             <parallax-fore>
                 <ng-content></ng-content>
             </parallax-fore>
-            <parallax-back *ngIf="image" [image]="image"></parallax-back>
+            <parallax-back *ngIf="backgroundClass" [backgroundClass]="backgroundClass"></parallax-back>
         </div>
     `,
     styles: [`
         .parallax__group {
             position: relative;
             height: 500px; /* fallback for older browsers */
-            height: 100vh;
+            height: 110vh;
             -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
         }
@@ -41,12 +41,12 @@ import { Component, Input } from '@angular/core';
     `]
 })
 export class ParallaxGroupComponent {
-    @Input() private image: string;
+    @Input() private backgroundClass: string;
 
     private setClasses(): any {
         return {
-            'parallax_layer--top': !Boolean(this.image),
-            'parallax_layer--bottom': Boolean(this.image)
+            'parallax_layer--top': !Boolean(this.backgroundClass),
+            'parallax_layer--bottom': Boolean(this.backgroundClass)
         };
     }
 }
