@@ -9,6 +9,9 @@ import { Component, Input } from '@angular/core';
             </parallax-fore>
             <parallax-back *ngIf="backgroundClass" [backgroundClass]="backgroundClass"></parallax-back>
         </div>
+        
+        <span class="scroll-btn scroll-btn-up glyphicon glyphicon-chevron-up"></span>
+        <span class="scroll-btn scroll-btn-down glyphicon glyphicon-chevron-down"></span>
     `,
     styles: [`
         .parallax__group {
@@ -37,6 +40,29 @@ import { Component, Input } from '@angular/core';
 
         /deep/ .parallax_layer--top .parallax__layer {
             background-color: white;
+        }
+
+        .scroll-btn {
+            position: absolute;
+            right: 40px;
+            color: white;
+            font-size: 35px;
+            z-index: 2;
+            border: 4px solid white;
+            top: auto;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .scroll-btn-up {
+            top: 30px;
+        }
+
+        .scroll-btn-down {
+            bottom: 30px;
         }
     `]
 })
