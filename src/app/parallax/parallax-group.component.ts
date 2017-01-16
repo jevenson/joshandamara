@@ -44,25 +44,29 @@ import { Component, Input } from '@angular/core';
 
         .scroll-btn {
             position: absolute;
-            right: 40px;
+            right: 2vw;
             color: white;
-            font-size: 35px;
+            font-size: 2vh;
             z-index: 2;
             border: 4px solid white;
             top: auto;
-            width: 100px;
-            height: 100px;
+            width: 7vh;
+            max-width: 100px;
+            min-width: 45px;
+            height: 7vh;
+            max-height: 100px;
+            min-height: 45px;
             display: flex;
             align-items: center;
             justify-content: center;
         }
 
         .scroll-btn-up {
-            top: 30px;
+            top: 2vh;
         }
 
         .scroll-btn-down {
-            bottom: 30px;
+            bottom: 2vh;
         }
     `]
 })
