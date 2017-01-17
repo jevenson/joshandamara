@@ -1,4 +1,4 @@
-import { Component, Input, AfterViewInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
     selector: 'scroll-nav',
@@ -6,11 +6,13 @@ import { Component, Input, AfterViewInit } from '@angular/core';
             <span
                 *ngIf="aboveTarget"
                 (click)="onUpClick()"
-                class="scroll-btn scroll-btn-up glyphicon glyphicon-chevron-up"></span>
+                class="scroll-btn scroll-btn-up glyphicon glyphicon-chevron-up"
+                [class.scroll-btn-alt]="alternate"></span>
             <span
                 *ngIf="belowTarget"
                 (click)="onDownClick()"
-                class="scroll-btn scroll-btn-down glyphicon glyphicon-chevron-down"></span>
+                class="scroll-btn scroll-btn-down glyphicon glyphicon-chevron-down"
+                [class.scroll-btn-alt]="alternate"></span>
     `,
     styles: [`
         .scroll-btn {
@@ -45,24 +47,19 @@ import { Component, Input, AfterViewInit } from '@angular/core';
         .scroll-btn-down {
             bottom: 2vh;
         }
+
+        .scroll-btn-alt {
+            color: rgba(0, 0, 0, 0.5);
+            border-color: rgba(0, 0, 0, 0.5);
+            background: transparent;
+        }
     `]
 })
-export class ScrollNavComponent implements AfterViewInit {
+export class ScrollNavComponent {
 
     @Input() public aboveTarget: string = null;
     @Input() public belowTarget: string = null;
-
-    // private aboveOffset: number = 0;
-    // private belowOffset: number = 0;
-
-    public ngAfterViewInit(): void {
-        // var that = this;
-
-        // $(document).ready(function(){
-        //     that.aboveOffset = that.getTargetOffset(that.aboveTarget);
-        //     that.belowOffset = that.getTargetOffset(that.belowTarget);
-        // });
-    }
+    @Input() private alternate: boolean = false;
 
     private getTargetOffset(target: string) {
         let result: number = 0;

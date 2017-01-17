@@ -11,7 +11,8 @@ import { Component, Input } from '@angular/core';
 
             <scroll-nav
                 [aboveTarget]="aboveTarget"
-                [belowTarget]="belowTarget"></scroll-nav>
+                [belowTarget]="belowTarget"
+                [alternate]="!backgroundClass"></scroll-nav>
         </div>
     `,
     styles: [`
