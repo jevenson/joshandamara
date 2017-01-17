@@ -7,7 +7,6 @@ import { ParallaxModule } from './parallax/parallax.module';
 
 import { AppComponent } from './app.component';
 
-
 @NgModule({
   declarations: [
     AppComponent

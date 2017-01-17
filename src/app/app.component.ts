@@ -12,11 +12,4 @@ export class AppComponent {
             console.log("edge sucks m8");
         }
     }
-
-    onNextClick(next: string) {
-        $('.parallax').animate(
-            {
-                scrollTop: $('#' + next).offset().top
-            }, 2000);
-    }
 }

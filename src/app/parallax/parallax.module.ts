@@ -6,6 +6,8 @@ import { ParallaxGroupComponent }   from './parallax-group.component';
 import { ParallaxBackgroundComponent }   from './parallax-background.component';
 import { ParallaxForegroundComponent }   from './parallax-foreground.component';
 
+import { ScrollNavComponent } from './scroll-nav.component';
+
 @NgModule({
     imports: [
         CommonModule
@@ -20,7 +22,8 @@ import { ParallaxForegroundComponent }   from './parallax-foreground.component';
         ParallaxListComponent,
         ParallaxGroupComponent,
         ParallaxBackgroundComponent,
-        ParallaxForegroundComponent
+        ParallaxForegroundComponent,
+        ScrollNavComponent
     ],
     providers: [],
 })
