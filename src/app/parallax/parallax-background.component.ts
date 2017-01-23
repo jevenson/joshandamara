@@ -10,11 +10,12 @@ import { Component, Input } from '@angular/core';
     styles: [`
         .parallax__layer--back {
             -webkit-transform: translateZ(-300px) scale(2);
-            transform: translateZ(-300px) scale(2.01, 2);
+            transform: translateZ(-300px) scale(2.02, 2);
             -moz-transform: translateZ(-300px) scale(2.02, 2);
             -ms-transform: none;
             background-position: center;
             background-size: cover;
+            box-shadow: inset 0 100vh  rgba(0, 0, 0, 0.2);
         }
     `]
 })
