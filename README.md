@@ -5,9 +5,10 @@ This project was generated with [angular-cli](https://github.com/angular/angular
 Todo List:
 - [x] Parallax
 - [ ] Edge browser fix/disable
-- [ ] Custom Domain
+- [x] Custom Domain
+- [ ] HTTPS Support?
 - [ ] Image Hosting
-- [ ] Hero
+- [x] Hero
 - [ ] Wedding Party
 - [ ] Hotel Information
 - [ ] Registry/Funding
