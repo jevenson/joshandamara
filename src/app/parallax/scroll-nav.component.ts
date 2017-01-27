@@ -29,7 +29,7 @@ import { Component, Input } from '@angular/core';
             transform: translateZ(0);
 
             color: white;
-            font-size: 2vh;
+            font-size: 3vh;
             border: 4px solid white;
             background: rgba(0, 0, 0, 0.2);
             cursor: pointer;
