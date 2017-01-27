@@ -13,6 +13,8 @@ import { Component, Input } from '@angular/core';
             transform: translateZ(0);
             -ms-transform: none;
             z-index: 4;
+            display: flex;
+            justify-content: center;
         }
     `]
 })

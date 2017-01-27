@@ -24,8 +24,8 @@ import { Component, Input } from '@angular/core';
             position: absolute;
             top: auto;
             right: 2vw;
-            
-            // fix for rendering issues
+
+            /* fix for rendering issues */
             transform: translateZ(0);
 
             color: white;
