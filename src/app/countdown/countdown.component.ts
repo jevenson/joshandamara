@@ -3,17 +3,20 @@ import { Component } from '@angular/core';
 @Component({
     selector: 'countdown',
     template: `
-        <h1 class="title">Only {{ countdown }} days until the big day!</h1>
+        <content-wrapper>
+            <h1 class="title">Only {{ countdown }} days until the big day!</h1>
+        </content-wrapper>
     `,
     styles: [`
         .title {
             text-align: center;
             position: absolute;
             top: 60vh;
+            left: 0vw;
             color: white;
             font-size: 6vh;
             text-shadow: 3px 3px black;
-            width: 100vw;
+            width: 90vw;
             background-color: rgba(0, 0, 0, 0.5);
             padding: 5vw;
         }
