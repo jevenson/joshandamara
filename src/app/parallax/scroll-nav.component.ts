@@ -6,12 +6,12 @@ import { Component, Input } from '@angular/core';
             <span
                 *ngIf="aboveTarget"
                 (click)="onUpClick()"
-                class="scroll-btn scroll-btn-up glyphicon glyphicon-chevron-up"
+                class="scroll-btn scroll-btn-up fa fa-angle-up"
                 [class.scroll-btn-alt]="alternate"></span>
             <span
                 *ngIf="belowTarget"
                 (click)="onDownClick()"
-                class="scroll-btn scroll-btn-down glyphicon glyphicon-chevron-down"
+                class="scroll-btn scroll-btn-down fa fa-angle-down"
                 [class.scroll-btn-alt]="alternate"></span>
     `,
     styles: [`
