@@ -12,6 +12,8 @@ import { HomePageComponent } from './pages/home-page.component';
 import { CountdownComponent } from './countdown/countdown.component';
 
 import { ContentWrapperComponent } from './content/content-wrapper.component';
+import { OurStoryComponent } from './content/our-story.component';
+import { WeddingPartyComponent } from './content/wedding-party.component';
 
 const appRoutes: Routes = [
     { path: '', component: HomePageComponent }
@@ -23,7 +25,9 @@ const appRoutes: Routes = [
     AppComponent,
     HomePageComponent,
     CountdownComponent,
-    ContentWrapperComponent
+    ContentWrapperComponent,
+    OurStoryComponent,
+    WeddingPartyComponent
   ],
   imports: [
     BrowserModule,

@@ -5,7 +5,7 @@ import { Component, Input } from '@angular/core';
     template: `
         <div class="content-wrapper_main">
             <h1 *ngIf="title">
-                <i class="fa fa-heart"></i>
+                <i class="fa" [class]="icon"></i>
                 {{ title }}
             </h1>
             <ng-content></ng-content>
@@ -28,4 +28,5 @@ import { Component, Input } from '@angular/core';
 })
 export class ContentWrapperComponent  {
     @Input() private title: string = null;
+    @Input() private icon: string = null;
 }

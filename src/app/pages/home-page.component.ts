@@ -12,26 +12,13 @@ import { Component } from '@angular/core';
                 </div>
             </parallax-group>
             <parallax-group identifier="two">
-                <content-wrapper title="our story">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
-                    anim id est laborum.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
-                    anim id est laborum.</p>
-                </content-wrapper>
+                <our-story></our-story>
             </parallax-group>
             <parallax-group backgroundClass="background1" identifier="three">
                 <countdown></countdown>
             </parallax-group>
             <parallax-group  identifier="four">
-                <h1 class="title">F O U R</h1>
+                <wedding-party></wedding-party>
             </parallax-group>
             <parallax-group backgroundClass="background2" identifier="five">
                 <h1 class="title">F I V E</h1>
