@@ -2,7 +2,7 @@ import { Component, AfterContentInit, QueryList , ContentChildren} from '@angula
 import { ParallaxGroupComponent } from './parallax-group.component';
 
 @Component({
-    selector: 'parallax-list',
+    selector: 'app-parallax-list',
     template: `
         <div class="parallax">
             <ng-content></ng-content>

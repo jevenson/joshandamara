@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'countdown',
+    selector: 'app-countdown',
     template: `
-        <content-wrapper>
+        <app-content-wrapper>
             <h1 class="title">Only {{ countdown }} days until the big day!</h1>
-        </content-wrapper>
+        </app-content-wrapper>
     `,
     styles: [`
         .title {
@@ -25,10 +25,9 @@ import { Component } from '@angular/core';
 export class CountdownComponent  {
     private weddingDate: Date = new Date(2017, 8, 2);
 
-    private get countdown(): number {
-        var oneDay = 24*60*60*1000; // hours*minutes*seconds*milliseconds
+    public get countdown(): number {
+        let oneDay = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
 
-        return Math.round(Math.abs((this.weddingDate.getTime() - new Date().getTime())/(oneDay)));
+        return Math.round(Math.abs((this.weddingDate.getTime() - new Date().getTime()) / (oneDay)));
     }
 }
- 

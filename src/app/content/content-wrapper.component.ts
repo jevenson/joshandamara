@@ -1,11 +1,11 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-    selector: 'content-wrapper',
+    selector: 'app-content-wrapper',
     template: `
         <div class="content-wrapper_main">
             <h1 *ngIf="title">
-                <i class="fa" [class]="icon"></i>
+                <i [class]="iconClass"></i>
                 {{ title }}
             </h1>
             <ng-content></ng-content>
@@ -19,14 +19,18 @@ import { Component, Input } from '@angular/core';
         }
 
         i {
-            font-size: 4vh;
-            margin-right: 4vw;
+            font-size: 66%;
             transform: rotate(-15deg);
+            margin-right: 3vw;
             color: pink;
         }
     `]
 })
 export class ContentWrapperComponent  {
-    @Input() private title: string = null;
+    @Input() public title: string = null;
     @Input() private icon: string = null;
+
+    public get iconClass(): string {
+        return 'fa ' + this.icon;
+    }
 }

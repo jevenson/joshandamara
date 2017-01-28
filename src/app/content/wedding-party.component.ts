@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'wedding-party',
+    selector: 'app-wedding-party',
     template: `
-        <content-wrapper title="wedding party">
-            
-        </content-wrapper>
+        <app-content-wrapper title="wedding party" icon="fa-users">
+
+        </app-content-wrapper>
     `
 })
 export class WeddingPartyComponent { }

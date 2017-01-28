@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-    selector: 'parallax-fore',
+    selector: 'app-parallax-fore',
     template: `
         <div class="parallax__layer parallax__layer--fore">
             <ng-content></ng-content>

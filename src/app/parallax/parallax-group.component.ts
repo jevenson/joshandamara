@@ -1,18 +1,18 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-    selector: 'parallax-group',
+    selector: 'app-parallax-group',
     template: `
         <div class="parallax__group" [ngClass]="setClasses()" [id]="identifier">
-            <parallax-fore>
+            <app-parallax-fore>
                 <ng-content></ng-content>
-            </parallax-fore>
-            <parallax-back *ngIf="backgroundClass" [backgroundClass]="backgroundClass"></parallax-back>
+            </app-parallax-fore>
+            <app-parallax-back *ngIf="backgroundClass" [backgroundClass]="backgroundClass"></app-parallax-back>
 
-            <scroll-nav
+            <app-scroll-nav
                 [aboveTarget]="aboveTarget"
                 [belowTarget]="belowTarget"
-                [alternate]="!backgroundClass"></scroll-nav>
+                [alternate]="!backgroundClass"></app-scroll-nav>
         </div>
     `,
     styles: [`
@@ -23,7 +23,7 @@ import { Component, Input } from '@angular/core';
             -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
         }
-        
+
         /deep/ .parallax__layer {
             position: absolute;
             top: 0;
@@ -51,9 +51,9 @@ export class ParallaxGroupComponent {
     public belowTarget: string = null;
 
     @Input() public identifier: string = null;
-    @Input() private backgroundClass: string;
+    @Input() public backgroundClass: string;
 
-    private setClasses(): any {
+    public setClasses(): any {
         return {
             'parallax_layer--top': !Boolean(this.backgroundClass),
             'parallax_layer--bottom': Boolean(this.backgroundClass)

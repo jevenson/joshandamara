@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-    selector: 'scroll-nav',
+    selector: 'app-scroll-nav',
     template: `
             <span
                 *ngIf="aboveTarget"
@@ -62,7 +62,7 @@ export class ScrollNavComponent {
 
     @Input() public aboveTarget: string = null;
     @Input() public belowTarget: string = null;
-    @Input() private alternate: boolean = false;
+    @Input() public alternate: boolean = false;
 
     private getTargetOffset(target: string) {
         let result: number = 0;
@@ -74,11 +74,11 @@ export class ScrollNavComponent {
         return result;
     }
 
-    private onUpClick(): void {
+    public onUpClick(): void {
         this.scroll(this.aboveTarget);
     }
 
-    private onDownClick(): void {
+    public onDownClick(): void {
         this.scroll(this.belowTarget);
     }
 
