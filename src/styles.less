@@ -1,15 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 
-/* Transform the body so it utilizes hardware accelleration */
 body {
+    /* Transform the body so it utilizes hardware accelleration */
     transform: translateZ(0);
     margin: 0;
 }
-
-/* Background Images */
-// .shaded {
-//     box-shadow: inset 0 100vh  rgba(0, 0, 0, 0.2);
-// }
 
 .hero {
     background-image: url(./assets/bkg1.jpg);
@@ -33,25 +28,32 @@ body {
 
 /* Font Setup */
 .header-font {
-    font-family: 'Nothing You Could Do', cursive !important;
+    font-family: 'Nothing You Could Do', cursive;
+}
+
+.content-font {
+    font-family: 'Raleway', sans-serif;
 }
 
 h1 {
     .header-font;
-    font-size: 6vh !important;;
+    font-size: 6vmax;
 }
 
 h2 {
     .header-font;
-    font-size: 4vh !important;;
+    font-size: 4vmax;
 }
 
 h3 {
     .header-font;
-    font-size: 2vh !important;;
+    font-size: 2vmax;
 }
 
 p {
-    font-family: 'Raleway', sans-serif;
-    font-size: 2vh !important;;
+    .content-font;
+    font-size: 2.5vmax;
+
+    /* This is magic. See https://github.com/nathanford/min-max-font-size */
+    max-font-size: 40px;
 }

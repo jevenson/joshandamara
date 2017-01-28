@@ -15,7 +15,7 @@ import { Component, Input } from '@angular/core';
             -ms-transform: none;
             background-position: center;
             background-size: cover;
-            box-shadow: inset 0 100vh  rgba(0, 0, 0, 0.2);
+            box-shadow: inset 0 100vh rgba(0, 0, 0, 0.2);
         }
     `]
 })

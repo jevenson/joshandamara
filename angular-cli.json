@@ -22,7 +22,8 @@
         "../node_modules/font-awesome/css/font-awesome.min.css"
       ],
       "scripts": [
-        "../node_modules/jquery/dist/jquery.min.js"
+        "../node_modules/jquery/dist/jquery.min.js",
+        "./assets/js/mm-fontsize.js"
       ],
       "environments": {
         "source": "environments/environment.ts",

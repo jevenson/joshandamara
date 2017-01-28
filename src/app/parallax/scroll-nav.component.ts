@@ -85,6 +85,6 @@ export class ScrollNavComponent {
     private scroll(target: string): void {
         $('.parallax').animate({
             scrollTop: $('.parallax').scrollTop() + $('#' + target).position().top
-        }, 1500);
+        }, 1000);
     }
 }
