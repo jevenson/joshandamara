@@ -8,7 +8,9 @@ import { Component, Input } from '@angular/core';
                 <i [class]="iconClass"></i>
                 {{ title }}
             </h1>
-            <ng-content></ng-content>
+            <div class="content-container">
+                <ng-content></ng-content>
+            </div>
         </div>
     `,
     styles: [`
@@ -18,11 +20,19 @@ import { Component, Input } from '@angular/core';
             margin-bottom: 10vh;
         }
 
+        h1 {
+            height: 10%;
+        }
+
         i {
             font-size: 66%;
             transform: rotate(-15deg);
             margin-right: 3vw;
             color: pink;
+        }
+
+        .content-container {
+            height: 90%;
         }
     `]
 })
