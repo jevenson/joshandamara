@@ -32,7 +32,7 @@ import { Component, Input } from '@angular/core';
         }
 
         .content-container {
-            height: 90%;
+            height: 80%;
         }
     `]
 })

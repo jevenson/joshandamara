@@ -8,12 +8,14 @@ Todo List:
 - [ ] Angular Loading Placeholder
 - [x] Custom Domain
 - [ ] HTTPS Support? - Host Production in Heroku
-- [ ] Image Hosting
 - [x] Hero
+- [ ] Our Story
 - [ ] Wedding Party
+- [ ] Location
 - [ ] Hotel Information
 - [ ] Registry/Funding
 - [ ] RSVP
+- [ ] FAQ
 - [ ] Gallery
 - [ ] Credits
 

@@ -14,6 +14,7 @@ import { CountdownComponent } from './countdown/countdown.component';
 import { ContentWrapperComponent } from './content/content-wrapper.component';
 import { OurStoryComponent } from './content/our-story.component';
 import { WeddingPartyComponent } from './content/wedding-party.component';
+import { PersonCardComponent } from './content/person-card.component';
 
 const appRoutes: Routes = [
     { path: '', component: HomePageComponent }
@@ -27,7 +28,8 @@ const appRoutes: Routes = [
     CountdownComponent,
     ContentWrapperComponent,
     OurStoryComponent,
-    WeddingPartyComponent
+    WeddingPartyComponent,
+    PersonCardComponent
   ],
   imports: [
     BrowserModule,
