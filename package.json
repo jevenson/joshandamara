@@ -13,7 +13,7 @@
     "test": "ng test",
     "pree2e": "webdriver-manager update --standalone false --gecko false",
     "deploy-test": "ng github-pages:deploy --custom-domain amaraandjosh.com",
-    "deploy-prod": "git push heroku master",
+    "deploy-prod": "git push origin heroku",
     "e2e": "protractor",
     "postinstall": "ng build --aot -prod"
   },
