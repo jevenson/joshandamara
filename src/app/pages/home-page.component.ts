@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 @Component({
     selector: 'app-home-page',
     template: `
+        <h1>This is github</h1>
         <app-parallax-list>
             <app-parallax-group backgroundClass="hero" identifier="hero">
                 <div class="hero-container">
