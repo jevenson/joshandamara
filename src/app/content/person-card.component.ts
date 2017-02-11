@@ -5,10 +5,10 @@ import { PersonCardModel } from './person-card.model';
     selector: '[app-person-card]',
     template: `
         <div class="person-card-image-container" [ngStyle]="{'background-image': 'url(' + config.imageUrl + ')'}">
-        </div>
-        <div class="person-card-text-container">
-            <h3>{{ config.name }}</h3>
-            <p>{{ config.position }}</p>
+            <div class="person-card-text-container">
+                <h3>{{ config.name }}</h3>
+                <p>{{ config.position }}</p>
+            </div>
         </div>
     `,
     styles: [`
@@ -21,15 +21,16 @@ import { PersonCardModel } from './person-card.model';
 
         @media (orientation: portrait) {
             :host {
-                height: 20%;
+                height: 46%;
                 width: 46%;
                 margin: 2%;
+                border: 5px solid pink;
             }
         }
 
         @media (orientation: landscape) {
             :host {
-                height: 44%;
+                height: 100%;
                 width: 20%;
                 margin: 2%;
                 flex-direction: column;
@@ -37,39 +38,39 @@ import { PersonCardModel } from './person-card.model';
         }
 
         .person-card-image-container {
-            flex: 4;
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
+            display: flex;
+            align-items: stretch;
+            flex-direction: column;
+            flex: 1;
         }
 
         .person-card-text-container {
-            margin: 10% 0;
+            color: white;
             display: flex;
-            flex: 6;
-            @media (orientation: landscape) { flex: 4; }
             flex-wrap: wrap;
             justify-content: center;
-        }
-
-        @media (orientation: landscape) {
-            .person-card-image-container { flex: 6; }
-            .person-card-text-container { flex: 4; }
+            background-color: rgba(0, 0, 0, 0.5);
+            align-items: flex-end;
+            margin-top: auto;
+            flex-direction: column;
         }
 
         h3 {
             margin: 0;
             align-self: center;
+            font-size: 1.5vmax;
         }
 
         p {
             margin: 0;
-            align-self: flex-end;
+            align-self: center;
+            font-size: 2vmin;
         }
     `]
 })
 export class PersonCardComponent {
     @Input() public config: PersonCardModel;
-
-    // <img src="{{ config.imageUrl }}" />
 }
