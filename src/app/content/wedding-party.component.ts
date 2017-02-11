@@ -22,15 +22,20 @@ import { PersonCardModel } from './person-card.model';
 export class WeddingPartyComponent { 
 
     private alien: string = `https://pbs.twimg.com/profile_images/747121470623514625/he98BkHY.jpg`;
+    private baseUrl: string = '/assets/wedding-party/';
 
     public weddingParty: PersonCardModel[] = [
-        new PersonCardModel('Brooke Heroux', 'Maid of Honor', this.alien),
-        new PersonCardModel('Kiahna Heroux', 'Bridesmaid', this.alien),
-        new PersonCardModel('Meghan Schmidt', 'Bridesmaid', this.alien),
-        new PersonCardModel('Elizabeth Boehnlein', 'Junior Bridesmaid', this.alien),
-        new PersonCardModel('James Verbrick', 'Best Man', this.alien),
-        new PersonCardModel('Zachary Alger', 'Groomsman', this.alien),
-        new PersonCardModel('Joao Castro Silva Jr.', 'Groomsman', this.alien),
+        new PersonCardModel('Brooke Heroux', 'Maid of Honor', this.getImageUrl('brooke.jpg')),
+        new PersonCardModel('Kiahna Heroux', 'Bridesmaid', this.getImageUrl('kiahna.jpg')),
+        new PersonCardModel('Meghan Schmidt', 'Bridesmaid', this.getImageUrl('meghan.jpg')),
+        new PersonCardModel('Elizabeth Boehnlein', 'Junior Bridesmaid',  this.getImageUrl('lizzy.jpg')),
+        new PersonCardModel('James Verbrick', 'Best Man',  this.getImageUrl('james.jpg')),
+        new PersonCardModel('Zachary Alger', 'Groomsman',  this.getImageUrl('zach.jpg')),
+        new PersonCardModel('Joao Castro Silva Jr.', 'Groomsman',  this.getImageUrl('joao.jpg')),
         new PersonCardModel('Aidan Boehnlein', 'Junior Groomsman', this.alien)
     ];
+
+    private getImageUrl(filename: string): string {
+        return this.baseUrl + filename;
+    }
 }
