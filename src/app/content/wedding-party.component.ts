@@ -26,7 +26,7 @@ import { PersonCardModel } from './person-card.model';
 export class WeddingPartyComponent { 
 
     private alien: string = `https://pbs.twimg.com/profile_images/747121470623514625/he98BkHY.jpg`;
-    private baseUrl: string = '/assets/wedding-party/';
+    private baseUrl: string = 'assets/wedding-party/';
 
     public bridesmaids: PersonCardModel[] = [
         new PersonCardModel('Brooke Heroux', 'Maid of Honor', this.getImageUrl('brooke.jpg')),
