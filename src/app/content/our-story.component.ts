@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
     selector: 'app-our-story',
     template: `
-        <app-content-wrapper title="our story" icon="fa-heart">
+        <app-content-wrapper header="our story" icon="fa-heart">
             <div class="text-wrapper">
                 <p>Amara and Josh first met at Neenah High School, when Josh bought a chocolate bar she 
                     was selling for a softball fundraiser. Little did they know, just a year later they would start dating! 

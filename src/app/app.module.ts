@@ -15,6 +15,8 @@ import { ContentWrapperComponent } from './content/content-wrapper.component';
 import { OurStoryComponent } from './content/our-story.component';
 import { WeddingPartyComponent } from './content/wedding-party.component';
 import { PersonCardComponent } from './content/person-card.component';
+import { LodgingComponent } from './content/lodging.component';
+import { EventComponent } from './content/event.component';
 
 const appRoutes: Routes = [
     { path: '', component: HomePageComponent }
@@ -29,7 +31,9 @@ const appRoutes: Routes = [
     ContentWrapperComponent,
     OurStoryComponent,
     WeddingPartyComponent,
-    PersonCardComponent
+    PersonCardComponent,
+    LodgingComponent,
+    EventComponent
   ],
   imports: [
     BrowserModule,

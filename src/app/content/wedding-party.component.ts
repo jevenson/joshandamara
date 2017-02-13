@@ -4,7 +4,7 @@ import { PersonCardModel } from './person-card.model';
 @Component({
     selector: 'app-wedding-party',
     template: `
-        <app-content-wrapper title="wedding party" icon="fa-glass">
+        <app-content-wrapper header="wedding party" icon="fa-glass">
             <div class="person-card-container">
                 <div app-person-card *ngFor="let person of bridesmaids" [config]="person"></div>
             </div>

@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
                 <div class="hero-container">
                     <h1>amara &amp; joshua</h1>
                     <hr/>
-                    <h2>september 2nd, 2016</h2>
+                    <h2>september 2nd, 2017</h2>
                 </div>
             </app-parallax-group>
             <app-parallax-group identifier="two">
@@ -18,19 +18,19 @@ import { Component } from '@angular/core';
                 <app-countdown></app-countdown>
             </app-parallax-group>
             <app-parallax-group  identifier="four">
-                <app-wedding-party></app-wedding-party>
+                <app-event></app-event>
             </app-parallax-group>
             <app-parallax-group backgroundClass="background2" identifier="five">
                 <h1 class="title">F I V E</h1>
             </app-parallax-group>
             <app-parallax-group identifier="six">
-                <h1 class="title">S I X</h1>
+                <app-lodging></app-lodging>
             </app-parallax-group>
             <app-parallax-group backgroundClass="background3" identifier="seven">
                 <h1 class="title">S E V E N</h1>
             </app-parallax-group>
             <app-parallax-group identifier="eight">
-                <h1 class="title">E I G H T</h1>
+                <app-wedding-party></app-wedding-party>
             </app-parallax-group>
         </app-parallax-list>
     `,

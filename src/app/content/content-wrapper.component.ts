@@ -4,9 +4,9 @@ import { Component, Input } from '@angular/core';
     selector: 'app-content-wrapper',
     template: `
         <div class="content-wrapper_main">
-            <h1 *ngIf="title">
+            <h1 *ngIf="header">
                 <i [class]="iconClass"></i>
-                {{ title }}
+                {{ header }}
             </h1>
             <div class="content-container">
                 <ng-content></ng-content>
@@ -37,7 +37,7 @@ import { Component, Input } from '@angular/core';
     `]
 })
 export class ContentWrapperComponent  {
-    @Input() public title: string = null;
+    @Input() public header: string = null;
     @Input() private icon: string = null;
 
     public get iconClass(): string {
