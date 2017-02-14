@@ -104,9 +104,8 @@ var stylefill = {
 		
 		var sheetstext = new Array(),
 				sheets = Array.prototype.slice.call(document.getElementsByTagName('link')); // grab stylesheet links - not used yet
-				
 				sheets.push(Array.prototype.slice.call(document.getElementsByTagName('style'))[0]); // add on page CSS
-		
+
 		sheets.reverse();
 			
 		var scount = this.objSize(sheets);
@@ -263,8 +262,10 @@ typo.maxFontSize = typo.minFontSize = function (rule) {
 		
 };
 
-// assign the CSS property to the function
-stylefill.init({
-	'max-font-size' : typo.maxFontSize,
-	'min-font-size' : typo.minFontSize
+$(document).ready(function() {
+    // assign the CSS property to the function
+    stylefill.init({
+        'max-font-size' : typo.maxFontSize,
+        'min-font-size' : typo.minFontSize
+    });
 });
