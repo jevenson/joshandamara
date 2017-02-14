@@ -5,9 +5,7 @@ import { Component } from '@angular/core';
     template: `
         <app-content-wrapper header="the event" icon="fa-calendar-o">
             <div class="container">
-                <div class="img-container">
-                    <img src="assets/sentry-world.jpg" />
-                </div>
+                <div class="img-container"></div>
                 <div class="text-container">
                     <h2 class="content-font">Sentry World</h2>
                     <hr/>
@@ -63,12 +61,18 @@ import { Component } from '@angular/core';
 
         .img-container {
             flex: 2;
-        }
-
-        img {
+            background-image: url(assets/sentry-world.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
             border: 5px solid pink;
             box-sizing: border-box;
             width: 100%;
+        }
+
+        @media(orientation: portrait) {
+            .img-container {
+                height: 25vh;
+            }
         }
     `]
 })
