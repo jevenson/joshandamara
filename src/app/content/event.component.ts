@@ -57,6 +57,7 @@ import { Component } from '@angular/core';
 
         .text-description-container {
             margin-top: 2vmax;
+            text-align: justify;
         }
 
         .img-container {
@@ -64,6 +65,7 @@ import { Component } from '@angular/core';
             background-image: url(assets/sentry-world.jpg);
             background-size: cover;
             background-repeat: no-repeat;
+            background-position: center;
             border: 5px solid pink;
             box-sizing: border-box;
             width: 100%;
