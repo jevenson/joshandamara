@@ -16,6 +16,9 @@ import { ParallaxGroupComponent } from './parallax-group.component';
             overflow-y: auto;
             -webkit-perspective: 300px;
             perspective: 300px;
+            position: fixed;
+            width: 99vw;
+            top: 0;
         }
     `]
 })
