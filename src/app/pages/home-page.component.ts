@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
         <app-parallax-list>
             <app-parallax-group backgroundClass="hero" identifier="hero">
                 <div class="hero-container">
-                    <h1>amara &amp; joshua test</h1>
+                    <h1>amara &amp; joshua test2</h1>
                     <hr/>
                     <h2>september 2nd, 2017</h2>
                 </div>
