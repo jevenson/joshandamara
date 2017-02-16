@@ -30,15 +30,20 @@ import { Component } from '@angular/core';
             display: flex;
             flex-direction: row;
             align-self: center;
+            flex-grow: 1;
+            width: 100%;
+            height: 100%;
         }
 
         @media(orientation: landscape) { .container { flex-direction: row; } }
         @media(orientation: portrait) { .container { flex-direction: column; } }
 
         .text-container {
-            flex: 1;
+            /* IE Fallback */
+            padding: 0 5%;
             padding: 0 2vmax;
             display: flex;
+            flex: 1;
             flex-direction: column;
         }
 
@@ -71,11 +76,7 @@ import { Component } from '@angular/core';
             width: 100%;
         }
 
-        @media(orientation: portrait) {
-            .img-container {
-                height: 25vh;
-            }
-        }
+        @media(orientation: portrait) { .img-container { flex: 1; } }
     `]
 })
 export class EventComponent {}
