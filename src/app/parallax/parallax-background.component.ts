@@ -1,9 +1,11 @@
 import { Component, Input } from '@angular/core';
 
+declare var window: any;
+
 @Component({
     selector: 'app-parallax-back',
     template: `
-        <div class="parallax__layer parallax__layer--back" [ngClass]="backgroundClass">
+        <div class="parallax__layer parallax__layer--back" [ngClass]="backgroundClass" [class.iOS]="iOS">
             <ng-content></ng-content>
         </div>
     `,
@@ -21,4 +23,8 @@ import { Component, Input } from '@angular/core';
 })
 export class ParallaxBackgroundComponent {
     @Input() public backgroundClass: string;
+
+    public get iOS(): boolean {
+        return Boolean(window['iOS']);
+    }
 }

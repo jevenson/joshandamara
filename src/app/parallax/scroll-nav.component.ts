@@ -1,5 +1,7 @@
 import { Component, Input } from '@angular/core';
 
+declare var window: any;
+
 @Component({
     selector: 'app-scroll-nav',
     template: `
@@ -12,7 +14,8 @@ import { Component, Input } from '@angular/core';
                 *ngIf="belowTarget"
                 (click)="onDownClick()"
                 class="scroll-btn scroll-btn-down fa fa-angle-down"
-                [class.scroll-btn-alt]="alternate"></span>
+                [class.scroll-btn-alt]="alternate"
+                [class.iOS]="iOS"></span>
     `,
     styles: [`
         .scroll-btn {
@@ -48,6 +51,10 @@ import { Component, Input } from '@angular/core';
         }
 
         .scroll-btn-down {
+            bottom: 2vh;
+        }
+
+        .scroll-btn-down.iOS {
             bottom: 4vh;
         }
 
@@ -72,6 +79,10 @@ export class ScrollNavComponent {
         }
 
         return result;
+    }
+
+    public get iOS(): boolean {
+        return Boolean(window['iOS']);
     }
 
     public onUpClick(): void {
