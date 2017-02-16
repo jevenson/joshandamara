@@ -83,11 +83,8 @@ export class ScrollNavComponent {
     }
 
     private scroll(target: string): void {
-
-        let scrollDistance: number = $('.parallax').scrollTop() + $('#' + target).position().top
-
-        $('.parallax, body').animate({
-            scrollTop: scrollDistance
+        $('.parallax').animate({
+            scrollTop: $('.parallax').scrollTop() + $('#' + target).position().top
         }, 1000);
     }
 }
