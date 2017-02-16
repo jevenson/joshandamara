@@ -48,7 +48,7 @@ import { Component, Input } from '@angular/core';
         }
 
         .scroll-btn-down {
-            bottom: 2vh;
+            bottom: 4vh;
         }
 
         .scroll-btn-alt {
