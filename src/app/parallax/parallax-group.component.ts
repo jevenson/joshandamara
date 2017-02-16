@@ -19,7 +19,7 @@ import { Component, Input } from '@angular/core';
         .parallax__group {
             position: relative;
             height: 500px; /* fallback for older browsers */
-            height: 100vh;
+            height: 90vh;
             -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
         }
