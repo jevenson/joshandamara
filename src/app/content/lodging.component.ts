@@ -9,12 +9,14 @@ import { Component } from '@angular/core';
                     <img src="assets/holiday-inn.png" />
                     <p>1001 Amber Avenue <br/> Stevens Point, WI 54482</p>
                     <p><i class="fa fa-phone"></i><a href="tel:715-344-0200">715-344-0200</a></p>
+                    <p><strong>Check-In:</strong> 3:00 p.m.</p>
+                    <p><strong>Check-Out:</strong> 12:00 p.m.</p>
                 </div>
                 <div class="text-container">
-                    <p>A wedding block will be available at the Holiday Inn, which is right off of US Highway 10. Call and ask 
-                    to be put in the "Heroux/Evenson" wedding block. Space is limited!</p>
-                    <p>Check in is at 3:00PM and check out is at 12:00PM. Shuttles will be available for rides to the hotel
-                    following the reception at Sentry World.</p>
+                    <p>The bride and groom booked a block of rooms at the Holiday Inn. If you would like to book a hotel room,
+                       please call and mention the “Heroux/Evenson” room block. Rooms will go fast, as it is a holiday weekend. Please book early!</p>
+                    <p>A shuttle will be available from the Holiday Inn to SentryWorld before and after the wedding.</p>
+                    <p>If you have any questions about accommodations, please contact the Holiday Inn or the bride or groom.</p>
                 </div>
             </div>
         </app-content-wrapper>
@@ -50,6 +52,7 @@ import { Component } from '@angular/core';
         @media(orientation: landscape) {
             .text-container {
                 padding: 10vh;
+                text-align: justify;
             }
         }
     `]

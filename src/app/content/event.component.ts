@@ -7,15 +7,15 @@ import { Component } from '@angular/core';
             <div class="container">
                 <div class="img-container"></div>
                 <div class="text-container">
-                    <h2 class="content-font">Sentry World</h2>
+                    <h2 class="content-font">SentryWorld</h2>
                     <hr/>
                     <h3 class="content-font">Stevens Point, WI</h3>
                     <p>601 North Michigan Avenue <br/> Stevens Point, WI 54481</p>
                     <div class="text-description-container">
-                        <p>An outdoor wedding and receiption will be hosted at the newly renovated Sentry World conference center.
-                        Golf is available at a discounted rate the day of the event!</p>
+                        <p>We would be honored for you to join us for the wedding ceremony on the beautiful grounds at SentryWorld.
+                        The reception will also be held at SentyWorld in the Grand Hall. </p>
 
-                        <p>A schedule of events will be made available.</p>
+                        <p>More information about the schedule of events will be available in May.</p>
                     </div>
                 </div>
             </div>

@@ -21,13 +21,13 @@ import { Component } from '@angular/core';
                 <app-event></app-event>
             </app-parallax-group>
             <app-parallax-group backgroundClass="background2" identifier="five">
-                <h1 class="title">F I V E</h1>
+                <app-hero-text>We're excited!</app-hero-text>
             </app-parallax-group>
             <app-parallax-group identifier="six">
                 <app-lodging></app-lodging>
             </app-parallax-group>
             <app-parallax-group backgroundClass="background3" identifier="seven">
-                <h1 class="title">S E V E N</h1>
+                <app-hero-text top="true">Get ready to pop the champagne!</app-hero-text>
             </app-parallax-group>
             <app-parallax-group identifier="eight">
                 <app-wedding-party></app-wedding-party>

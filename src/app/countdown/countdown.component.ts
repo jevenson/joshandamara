@@ -14,11 +14,11 @@ import { Component } from '@angular/core';
             top: 60vh;
             left: 0vw;
             color: white;
-            font-size: 6vh;
+            font-size: 5vh;
             text-shadow: 3px 3px black;
-            width: 90vw;
+            width: 96vw;
             background-color: rgba(0, 0, 0, 0.5);
-            padding: 5vw;
+            padding: 2vw;
         }
     `]
 })

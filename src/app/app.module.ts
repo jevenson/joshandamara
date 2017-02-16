@@ -17,6 +17,7 @@ import { WeddingPartyComponent } from './content/wedding-party.component';
 import { PersonCardComponent } from './content/person-card.component';
 import { LodgingComponent } from './content/lodging.component';
 import { EventComponent } from './content/event.component';
+import { HeroTextComponent } from './content/hero-text.component';
 
 const appRoutes: Routes = [
     { path: '', component: HomePageComponent }
@@ -24,25 +25,28 @@ const appRoutes: Routes = [
 
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomePageComponent,
-    CountdownComponent,
-    ContentWrapperComponent,
-    OurStoryComponent,
-    WeddingPartyComponent,
-    PersonCardComponent,
-    LodgingComponent,
-    EventComponent
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    HttpModule,
-    ParallaxModule,
-    RouterModule.forRoot(appRoutes)
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        HomePageComponent,
+        CountdownComponent,
+        ContentWrapperComponent,
+        OurStoryComponent,
+        WeddingPartyComponent,
+        PersonCardComponent,
+        LodgingComponent,
+        EventComponent,
+        HeroTextComponent
+    ],
+    imports: [
+        BrowserModule,
+        FormsModule,
+        HttpModule,
+        ParallaxModule,
+        RouterModule.forRoot(appRoutes)
+    ],
+    providers: [],
+    bootstrap: [
+        AppComponent
+    ]
 })
 export class AppModule { }

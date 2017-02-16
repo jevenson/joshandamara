@@ -23,9 +23,7 @@ import { PersonCardModel } from './person-card.model';
         }
     `]
 })
-export class WeddingPartyComponent { 
-
-    private alien: string = `https://pbs.twimg.com/profile_images/747121470623514625/he98BkHY.jpg`;
+export class WeddingPartyComponent {
     private baseUrl: string = 'assets/wedding-party/';
 
     public bridesmaids: PersonCardModel[] = [
@@ -39,7 +37,7 @@ export class WeddingPartyComponent {
         new PersonCardModel('James Verbrick', 'Best Man',  this.getImageUrl('james.jpg')),
         new PersonCardModel('Zachary Alger', 'Groomsman',  this.getImageUrl('zach.jpg')),
         new PersonCardModel('Joao Castro Silva Jr.', 'Groomsman',  this.getImageUrl('joao.jpg')),
-        new PersonCardModel('Aidan Boehnlein', 'Junior Groomsman', this.alien)
+        new PersonCardModel('Aidan Boehnlein', 'Junior Groomsman', this.getImageUrl('aidan.jpg'))
     ];
 
     private getImageUrl(filename: string): string {
