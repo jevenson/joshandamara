@@ -11,7 +11,7 @@ import { ParallaxGroupComponent } from './parallax-group.component';
     styles: [`
         .parallax {
             height: 500px; /* fallback for older browsers */
-            height: 100vh;
+            height: 101vh;
             overflow-x: hidden;
             overflow-y: auto;
             -webkit-perspective: 300px;
