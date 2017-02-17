@@ -4,6 +4,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+import { BrowserGuard } from './browser-guard.service';
+
 import { ParallaxModule } from './parallax/parallax.module';
 
 import { AppComponent } from './app.component';
@@ -21,7 +23,7 @@ import { EventComponent } from './content/event.component';
 import { HeroTextComponent } from './content/hero-text.component';
 
 const appRoutes: Routes = [
-    { path: '', component: HomePageComponent },
+    { path: '', component: HomePageComponent, canActivate: [BrowserGuard] },
     { path: 'rip', component: BrowserComponent },
 ];
 
@@ -47,7 +49,9 @@ const appRoutes: Routes = [
         ParallaxModule,
         RouterModule.forRoot(appRoutes)
     ],
-    providers: [],
+    providers: [
+        BrowserGuard
+    ],
     bootstrap: [
         AppComponent
     ]

@@ -16,7 +16,7 @@ import { Component } from '@angular/core';
                 <h1>amara & josh</h1>
                 <h2>september 2nd, 2017</h2>
             
-                <p>Sorry, it looks like you're browser isn't compatible with our site.</p>
+                <p>Sorry, it looks like your browser isn't compatible with our site.</p>
 
                 <a href="https://www.google.com/chrome/browser/desktop/index.html">
                     <p>Google Chrome is recommended.</p>
