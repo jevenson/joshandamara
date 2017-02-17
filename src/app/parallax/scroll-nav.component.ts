@@ -51,10 +51,6 @@ import { Component, Input } from '@angular/core';
             bottom: 2vh;
         }
 
-        .scroll-btn-down.iOS {
-            bottom: 4vh;
-        }
-
         .scroll-btn-alt {
             color: rgba(0, 0, 0, 0.5);
             border-color: rgba(0, 0, 0, 0.5);
