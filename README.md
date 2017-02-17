@@ -9,10 +9,10 @@ Todo List:
 - [x] Custom Domain
 - [ ] HTTPS Support? - Host Production in Heroku
 - [x] Hero
-- [ ] Our Story
-- [ ] Wedding Party
-- [ ] Location
-- [ ] Hotel Information
+- [x] Our Story
+- [x] Wedding Party
+- [x] Location
+- [x] Hotel Information
 - [ ] Registry/Funding
 - [ ] RSVP
 - [ ] FAQ

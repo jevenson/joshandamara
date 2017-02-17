@@ -21,7 +21,6 @@ import { Component } from '@angular/core';
                 <app-event></app-event>
             </app-parallax-group>
             <app-parallax-group backgroundClass="background2" identifier="five">
-                <app-hero-text>We're excited!</app-hero-text>
             </app-parallax-group>
             <app-parallax-group identifier="six">
                 <app-lodging></app-lodging>

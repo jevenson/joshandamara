@@ -14,6 +14,10 @@ import { PersonCardModel } from './person-card.model';
         </app-content-wrapper>
     `,
     styles: [`
+        :host >>> .content-container {
+            height: 90%;
+        }
+
         .person-card-container {
             height: 46%;
             margin-bottom: 2%;

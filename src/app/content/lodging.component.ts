@@ -31,6 +31,7 @@ import { Component } from '@angular/core';
             display: flex;
             align-self: center;
             justify-content: center;
+            width: 100%;
         }
 
         @media(orientation: landscape) { .container { flex-direction: row; } }
@@ -38,6 +39,7 @@ import { Component } from '@angular/core';
 
         .hotel-container {
             text-align: center;
+            align-self: center;
         }
 
         i {
@@ -46,6 +48,7 @@ import { Component } from '@angular/core';
         }
 
         img {
+            height: 175px;
             height: 15vmax;
         }
 
