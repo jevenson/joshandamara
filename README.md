@@ -4,10 +4,11 @@ This project was generated with [angular-cli](https://github.com/angular/angular
 
 Todo List:
 - [x] Parallax
-- [ ] Edge browser fix/disable
+- [x] Edge browser fix/disable (RIP Edge)
 - [ ] Angular Loading Placeholder
 - [x] Custom Domain
-- [ ] HTTPS Support? - Host Production in Heroku
+- [ ] HTTPS Support? - Host Production in Heroku?
+- [ ] Site meta data. Facebook, Twitter, Google Meta tags
 - [x] Hero
 - [x] Our Story
 - [x] Wedding Party
