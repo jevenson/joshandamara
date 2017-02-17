@@ -1,11 +1,9 @@
 import { Component, Input } from '@angular/core';
 
-declare var window: any;
-
 @Component({
     selector: 'app-parallax-fore',
     template: `
-        <div class="parallax__layer parallax__layer--fore" [class.iOS]="iOS">
+        <div class="parallax__layer parallax__layer--fore">
             <ng-content></ng-content>
         </div>
     `,
@@ -20,8 +18,4 @@ declare var window: any;
         }
     `]
 })
-export class ParallaxForegroundComponent {
-    public get iOS(): boolean {
-        return Boolean(window['iOS']);
-    }
-}
+export class ParallaxForegroundComponent { }

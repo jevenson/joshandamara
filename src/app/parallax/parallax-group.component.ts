@@ -1,7 +1,5 @@
 import { Component, Input } from '@angular/core';
 
-declare var window: any;
-
 @Component({
     selector: 'app-parallax-group',
     template: `
@@ -26,20 +24,12 @@ declare var window: any;
             transform-style: preserve-3d;
         }
 
-        .parallax__group.iOS {
-            height: 92vh;
-        }
-
         /deep/ .parallax__layer {
             position: absolute;
             top: 0;
             left: 0;
             right: 0;
             bottom: 0;
-        }
-
-        /deep/ .parallax__layer.iOS {
-            top: -3vh;
         }
 
         /deep/ .parallax_layer--bottom  {
@@ -66,8 +56,7 @@ export class ParallaxGroupComponent {
     public setClasses(): any {
         return {
             'parallax_layer--top': !Boolean(this.backgroundClass),
-            'parallax_layer--bottom': Boolean(this.backgroundClass),
-            'iOS': Boolean(window['iOS'])
+            'parallax_layer--bottom': Boolean(this.backgroundClass)
         };
     }
 }
