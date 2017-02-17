@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 declare var window: any;
 
@@ -11,9 +12,9 @@ declare var window: any;
     `
 })
 export class AppComponent {
-    constructor() {
+    constructor(private router: Router) {
         if (navigator.userAgent.match(/Edge/i)) {
-            console.log('edge sucks m8');
+            router.navigate(['rip']);
         }
     }
 

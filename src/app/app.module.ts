@@ -8,6 +8,7 @@ import { ParallaxModule } from './parallax/parallax.module';
 
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './pages/home-page.component';
+import { BrowserComponent } from './pages/browser-page.component';
 
 import { CountdownComponent } from './countdown/countdown.component';
 
@@ -20,7 +21,8 @@ import { EventComponent } from './content/event.component';
 import { HeroTextComponent } from './content/hero-text.component';
 
 const appRoutes: Routes = [
-    { path: '', component: HomePageComponent }
+    { path: '', component: HomePageComponent },
+    { path: 'rip', component: BrowserComponent },
 ];
 
 
@@ -28,6 +30,7 @@ const appRoutes: Routes = [
     declarations: [
         AppComponent,
         HomePageComponent,
+        BrowserComponent,
         CountdownComponent,
         ContentWrapperComponent,
         OurStoryComponent,
