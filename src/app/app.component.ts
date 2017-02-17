@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+declare var window: any;
+
 @Component({
     selector: 'app-root',
     template: `
@@ -16,6 +18,7 @@ export class AppComponent {
     }
 
     public get iOS(): boolean {
-        return true;// /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+        // Have to test MSStream because iPhone may appear in the IE User Agent
+        return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
     }
 }
