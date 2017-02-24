@@ -31,6 +31,10 @@ import { Component } from '@angular/core';
             <app-parallax-group identifier="eight">
                 <app-wedding-party></app-wedding-party>
             </app-parallax-group>
+            <a id="credits-link" routerLink="/credits">
+                <p>credits</p>
+            </a>
+            <app-footer></app-footer>
         </app-parallax-list>
     `,
     styleUrls: ['./home-page.component.less']

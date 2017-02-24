@@ -14,9 +14,13 @@ import { Component } from '@angular/core';
                 </div>
                 <div class="text-container">
                     <p>The bride and groom booked a block of rooms at the Holiday Inn. If you would like to book a hotel room,
-                       please call and mention the “Heroux/Evenson” room block. Rooms will go fast, as it is a holiday weekend. Please book early!</p>
+                       please call and mention the “Heroux/Evenson” room block. If booking online, use group code &quot;HEW&quot;.
+                       Rooms will go fast, as it is a holiday weekend. Please book early!</p>
                     <p>A shuttle will be available from the Holiday Inn to SentryWorld before and after the wedding.</p>
                     <p>If you have any questions about accommodations, please contact the Holiday Inn or the bride or groom.</p>
+                    <a id="booking-btn" href="https://www.holidayinn.com/redirect?path=rates&brandCode=hi&localeCode=en&regionCode=1&hotelCode=STEAA&checkInDate=01&checkInMonthYear=082017&checkOutDate=03&checkOutMonthYear=082017&_PMID=99801505&GPC=HEW&viewfullsite=true">
+                        <p>Book Online Today!</p>
+                    </a>
                 </div>
             </div>
         </app-content-wrapper>
@@ -58,6 +62,23 @@ import { Component } from '@angular/core';
                 text-align: justify;
             }
         }
+
+        #booking-btn {
+            display: block;
+            color: white;
+            background-color: pink;
+            width: 50%;
+            margin: 0 auto;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            opacity: .8;
+        }
+
+        #booking-btn:hover { opacity: 1; }
+
+        #booking-btn p { margin: 0; }
     `]
 })
 export class LodgingComponent { }

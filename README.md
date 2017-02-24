@@ -7,8 +7,8 @@ Todo List:
 - [x] Edge browser fix/disable (RIP Edge)
 - [ ] Angular Loading Placeholder
 - [x] Custom Domain
-- [ ] HTTPS Support? - Host Production in Heroku?
-- [ ] Site meta data. Facebook, Twitter, Google Meta tags
+- [x] HTTPS Support
+- [x] Site meta data. Facebook, Twitter, Google Meta tags
 - [x] Hero
 - [x] Our Story
 - [x] Wedding Party
@@ -18,7 +18,7 @@ Todo List:
 - [ ] RSVP
 - [ ] FAQ
 - [ ] Gallery
-- [ ] Credits
+- [x] Credits
 
 
 Big thanks to Keith Clark for this CSS Parallax article!

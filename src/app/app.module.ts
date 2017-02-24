@@ -11,6 +11,7 @@ import { ParallaxModule } from './parallax/parallax.module';
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './pages/home-page.component';
 import { BrowserComponent } from './pages/browser-page.component';
+import { CreditsPageComponent } from './pages/credits-page.component';
 
 import { CountdownComponent } from './countdown/countdown.component';
 
@@ -21,10 +22,12 @@ import { PersonCardComponent } from './content/person-card.component';
 import { LodgingComponent } from './content/lodging.component';
 import { EventComponent } from './content/event.component';
 import { HeroTextComponent } from './content/hero-text.component';
+import { FooterComponent } from './content/footer.component';
 
 const appRoutes: Routes = [
     { path: '', component: HomePageComponent, canActivate: [BrowserGuard] },
     { path: 'rip', component: BrowserComponent },
+    { path: 'credits', component: CreditsPageComponent },
     { path: '**', redirectTo: '' }
 ];
 
@@ -33,6 +36,7 @@ const appRoutes: Routes = [
     declarations: [
         AppComponent,
         HomePageComponent,
+        CreditsPageComponent,
         BrowserComponent,
         CountdownComponent,
         ContentWrapperComponent,
@@ -41,7 +45,8 @@ const appRoutes: Routes = [
         PersonCardComponent,
         LodgingComponent,
         EventComponent,
-        HeroTextComponent
+        HeroTextComponent,
+        FooterComponent
     ],
     imports: [
         BrowserModule,
