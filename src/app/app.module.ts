@@ -25,6 +25,7 @@ import { HeroTextComponent } from './content/hero-text.component';
 const appRoutes: Routes = [
     { path: '', component: HomePageComponent, canActivate: [BrowserGuard] },
     { path: 'rip', component: BrowserComponent },
+    { path: '**', redirectTo: '' }
 ];
 
 
