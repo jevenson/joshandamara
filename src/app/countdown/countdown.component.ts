@@ -17,7 +17,6 @@ import { Component } from '@angular/core';
             font-size: 5vh;
             text-shadow: 3px 3px black;
             width: 96vw;
-            background-color: rgba(0, 0, 0, 0.5);
             padding: 2vw;
         }
     `]
