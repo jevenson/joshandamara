@@ -2,25 +2,6 @@
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli). See the docs for build information.
 
-Todo List:
-- [x] Parallax
-- [x] Edge browser fix/disable (RIP Edge)
-- [ ] Angular Loading Placeholder
-- [x] Custom Domain
-- [x] HTTPS Support
-- [x] Site meta data. Facebook, Twitter, Google Meta tags
-- [x] Hero
-- [x] Our Story
-- [x] Wedding Party
-- [x] Location
-- [x] Hotel Information
-- [ ] Registry/Funding
-- [ ] RSVP
-- [ ] FAQ
-- [ ] Gallery
-- [x] Credits
-
-
 Big thanks to Keith Clark for this CSS Parallax article!
 
 [Pure CSS Parallax Websites](http://keithclark.co.uk/articles/pure-css-parallax-websites/)
