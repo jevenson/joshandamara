@@ -21,6 +21,7 @@ import { WeddingPartyComponent } from './content/wedding-party.component';
 import { PersonCardComponent } from './content/person-card.component';
 import { LodgingComponent } from './content/lodging.component';
 import { EventComponent } from './content/event.component';
+import { ScheduleComponent } from './content/schedule.component';
 import { HeroTextComponent } from './content/hero-text.component';
 import { FooterComponent } from './content/footer.component';
 
@@ -45,6 +46,7 @@ const appRoutes: Routes = [
         PersonCardComponent,
         LodgingComponent,
         EventComponent,
+        ScheduleComponent,
         HeroTextComponent,
         FooterComponent
     ],
