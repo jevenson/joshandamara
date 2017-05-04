@@ -81,6 +81,28 @@ a:visited {
     color: black;
 }
 
+.button {
+    display: block;
+    background-color: pink;
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    opacity: .8;
+
+    p {
+        margin: 0;
+        color: white;
+    }
+
+    &:hover {
+        text-decoration: none;
+        opacity: .6;
+    }
+}
+
 /* iOS Specific Overrides */
 .app-container.iOS {
     .scroll-btn {

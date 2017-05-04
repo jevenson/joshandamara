@@ -12,11 +12,12 @@ import { Component } from '@angular/core';
                     <h3 class="content-font">Stevens Point, WI</h3>
                     <p>601 North Michigan Avenue <br/> Stevens Point, WI 54481</p>
                     <div class="text-description-container">
-                        <p>We would be honored for you to join us for the wedding ceremony on the beautiful grounds at SentryWorld.
+                        <p>We would be honored for you to join us for our wedding ceremony on the beautiful grounds at SentryWorld.
                         The reception will also be held at SentyWorld in the Grand Hall. </p>
-
-                        <p>More information about the schedule of events will be available in May.</p>
                     </div>
+                    <a class="button" target="_blank" href="https://www.google.com/maps/place/SentryWorld+Golf+Course">
+                        <p>Map & Directions</p>
+                    </a>
                 </div>
             </div>
         </app-content-wrapper>

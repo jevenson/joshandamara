@@ -48,12 +48,12 @@ export class ScheduleComponent {
         {
             "name": "Cocktail Hour",
             "time": "4:15 p.m.",
-            "description": "Cocktails and hors d’oeuvres will be served in the Grand Hall's prefunction area on the second floor."
+            "description": "Cocktails and hors d’oeuvres will be served in the Grand Hall."
         },
         {
             "name": "Dinner & Reception",
             "time": "5:30 p.m.",
-            "description": "Join us for a seated dinner in the Grand Hall at SentryWorld."
+            "description": "Join us for a seated dinner in the Grand Hall followed by dancing and live music."
         }
     ];
 }

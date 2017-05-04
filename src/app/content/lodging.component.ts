@@ -19,7 +19,7 @@ import { Component } from '@angular/core';
                        your room by May 26th!</p>
                     <p>A shuttle will be available from the Holiday Inn to SentryWorld before and after the wedding.</p>
                     <p>If you have any questions about accommodations, please contact the Holiday Inn or the bride or groom.</p>
-                    <a id="booking-btn" target="_blank" href="https://www.holidayinn.com/redirect?path=rates&brandCode=hi&localeCode=en&regionCode=1&hotelCode=STEAA&checkInDate=02&checkInMonthYear=082017&checkOutDate=03&checkOutMonthYear=082017&_PMID=99801505&GPC=HEW&viewfullsite=true">
+                    <a class="button" target="_blank" href="https://www.holidayinn.com/redirect?path=rates&brandCode=hi&localeCode=en&regionCode=1&hotelCode=STEAA&checkInDate=02&checkInMonthYear=082017&checkOutDate=03&checkOutMonthYear=082017&_PMID=99801505&GPC=HEW&viewfullsite=true">
                         <p>Book Online Today!</p>
                     </a>
                 </div>
@@ -62,19 +62,6 @@ import { Component } from '@angular/core';
                 padding: 10vh;
                 text-align: justify;
             }
-        }
-
-        #booking-btn {
-            display: block;
-            color: white;
-            background-color: pink;
-            width: 50%;
-            margin: 0 auto;
-            padding: 10px;
-            border-radius: 5px;
-            text-align: center;
-            text-decoration: none;
-            opacity: .8;
         }
 
         #booking-btn:hover { opacity: 1; }
