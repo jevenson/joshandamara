@@ -16,7 +16,7 @@ import { Component } from '@angular/core';
                     <p>The bride and groom booked a block of rooms at the Holiday Inn. If you would like to book a hotel room,
                        please call and mention the “Heroux/Evenson” room block. If booking online, use group code "HEW".
                        The room rate is $99 per night, plus tax. Rooms will go fast, as it is a holiday weekend so please book\
-                       your room by May 26th!</p>
+                       your room by <strong>May 26th!</strong></p>
                     <p>A shuttle will be available from the Holiday Inn to SentryWorld before and after the wedding.</p>
                     <p>If you have any questions about accommodations, please contact the Holiday Inn or the bride or groom.</p>
                     <a class="button" target="_blank" href="https://www.holidayinn.com/redirect?path=rates&brandCode=hi&localeCode=en&regionCode=1&hotelCode=STEAA&checkInDate=02&checkInMonthYear=082017&checkOutDate=03&checkOutMonthYear=082017&_PMID=99801505&GPC=HEW&viewfullsite=true">

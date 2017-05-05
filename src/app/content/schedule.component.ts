@@ -47,12 +47,12 @@ export class ScheduleComponent {
         },
         {
             "name": "Cocktail Hour",
-            "time": "4:15 p.m.",
+            "time": "4:30 p.m.",
             "description": "Cocktails and hors d’oeuvres will be served in the Grand Hall."
         },
         {
             "name": "Dinner & Reception",
-            "time": "5:30 p.m.",
+            "time": "6:00 p.m.",
             "description": "Join us for a seated dinner in the Grand Hall followed by dancing and live music."
         }
     ];
